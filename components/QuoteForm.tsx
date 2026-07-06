@@ -63,6 +63,7 @@ export function QuoteForm() {
         <option value="">Project type</option>
         <option>Wardrobe</option>
         <option>Kitchen</option>
+        <option>Bespoke storage</option>
         <option>Other</option>
       </select>
 
