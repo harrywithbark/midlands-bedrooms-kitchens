@@ -370,3 +370,110 @@ section.compact { padding-top: 56px; padding-bottom: 56px; }
   .split-section.reverse { direction: ltr; }
   .topbar-inner { justify-content: center; text-align: center; }
 }
+
+/* === Peace-inspired catalog layouts === */
+.catalog-block { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line); }
+.catalog-header { margin-bottom: 28px; }
+.catalog-breadcrumb { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--stone); margin-bottom: 10px; }
+.catalog-breadcrumb strong { color: var(--brand); font-weight: 500; }
+.catalog-header h3 { font-size: clamp(22px, 3vw, 28px); margin-bottom: 10px; }
+.catalog-intro { font-size: 15px; max-width: 640px; color: var(--stone); }
+
+.catalog-layout { display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: start; }
+.catalog-sidebar { position: sticky; top: 88px; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 22px 18px; }
+.catalog-sidebar h4 { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone); margin-bottom: 14px; }
+.catalog-cats { list-style: none; margin: 0; padding: 0; }
+.catalog-cats li { margin-bottom: 4px; }
+.catalog-cat {
+  display: block; width: 100%; text-align: left; padding: 10px 12px; border: none; background: transparent;
+  font-family: var(--font-body); font-size: 14px; color: var(--ink); cursor: pointer; border-radius: 3px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.catalog-cat:hover { background: rgba(201,133,39,0.08); color: var(--brand); }
+.catalog-cat.active { background: var(--brand); color: var(--cream); font-weight: 500; }
+.catalog-sidebar-note { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 12px; }
+
+.catalog-toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 14px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; margin-bottom: 20px;
+}
+.catalog-toolbar-right { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.catalog-count { font-family: var(--font-mono); font-size: 12px; color: var(--stone); }
+.catalog-count strong { color: var(--ink); font-weight: 600; }
+.catalog-sort { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--stone); }
+.catalog-sort-select {
+  font-family: var(--font-body); font-size: 13px; padding: 8px 12px; border: 1px solid var(--line);
+  border-radius: 3px; background: var(--cream); color: var(--ink); cursor: pointer;
+}
+.catalog-cols { display: flex; gap: 4px; }
+.col-btn {
+  width: 32px; height: 32px; padding: 0; border: 1px solid var(--line); background: var(--cream);
+  font-family: var(--font-mono); font-size: 12px; cursor: pointer; border-radius: 3px; color: var(--stone);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+.col-btn:hover { border-color: var(--brand-accent); color: var(--brand); }
+.col-btn.active { background: var(--brand); border-color: var(--brand); color: var(--cream); }
+
+.catalog-grid { display: grid; gap: 20px; }
+.catalog-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.catalog-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.catalog-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+.product-card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 4px; overflow: hidden;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.product-card:hover { border-color: var(--brand-accent); transform: translateY(-2px); }
+.product-card.hidden { display: none; }
+.product-thumb {
+  display: block; height: 200px; background-size: cover; background-position: center; position: relative;
+  text-decoration: none;
+}
+.product-badge {
+  position: absolute; top: 12px; left: 12px; font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.06em; text-transform: uppercase; background: var(--brand); color: var(--cream);
+  padding: 5px 10px; border-radius: 2px;
+}
+.product-body { padding: 18px 20px 20px; }
+.product-cat { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--stone); }
+.product-body h4 { font-size: 17px; margin: 6px 0 8px; font-weight: 600; }
+.product-body p { font-size: 13px; color: var(--stone); margin-bottom: 14px; line-height: 1.5; }
+.product-enquire {
+  display: inline-block; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em;
+  text-transform: uppercase; text-decoration: none; color: var(--brand); font-weight: 500;
+  padding: 8px 0; border-bottom: 1px solid var(--brand-accent);
+  transition: color 0.15s, border-color 0.15s;
+}
+.product-enquire:hover { color: var(--brand-hover); border-color: var(--brand-hover); }
+
+.swatch-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.swatch-card {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 14px;
+  text-align: center; transition: border-color 0.15s;
+}
+.swatch-card:hover { border-color: var(--brand-accent); }
+.swatch-card.hidden { display: none; }
+.swatch { height: 72px; border-radius: 3px; margin-bottom: 12px; }
+.swatch-card h4 { font-size: 14px; margin-bottom: 4px; }
+.swatch-card p { font-size: 11px; font-family: var(--font-mono); color: var(--stone); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.storage-block { margin-top: 8px; }
+.gallery-toolbar { margin-top: 16px; }
+
+.finishes-layout { margin-top: 8px; }
+
+@media (max-width: 960px) {
+  .catalog-layout { grid-template-columns: 1fr; }
+  .catalog-sidebar { position: static; }
+  .catalog-cats { display: flex; flex-wrap: wrap; gap: 6px; }
+  .catalog-cats li { margin: 0; }
+  .catalog-cat { padding: 8px 14px; border: 1px solid var(--line); border-radius: 20px; width: auto; }
+  .catalog-cat.active { border-color: var(--brand); }
+  .catalog-grid.cols-3, .catalog-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+  .swatch-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 560px) {
+  .catalog-grid.cols-2, .catalog-grid.cols-3, .catalog-grid.cols-4 { grid-template-columns: 1fr; }
+  .swatch-grid { grid-template-columns: repeat(2, 1fr); }
+  .catalog-toolbar { flex-direction: column; align-items: flex-start; }
+}

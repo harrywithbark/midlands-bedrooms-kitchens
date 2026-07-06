@@ -29,6 +29,7 @@
   <ul>
     <li><a href="#wardrobes">Wardrobes</a></li>
     <li><a href="#kitchens">Kitchens</a></li>
+        <li><a href="#finishes">Finishes</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -40,6 +41,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#wardrobes">Wardrobes</a>
   <a href="#kitchens">Kitchens</a>
+  <a href="#finishes">Finishes</a>
   <a href="#gallery">Gallery</a>
   <a href="#contact">Contact</a>
   <a class="btn" href="#contact">WhatsApp / Call</a>
@@ -107,6 +109,96 @@
     </div>
     <div class="split-photo bracketed" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80');"><span class="bl"></span><span class="br"></span><span class="ph-label">[ placeholder photo ]</span></div>
   </div>
+
+  <div class="catalog-block" id="wardrobe-styles">
+    <div class="catalog-header">
+      <nav class="catalog-breadcrumb" aria-label="Breadcrumb"><span>Wardrobes</span> / <strong>Styles</strong></nav>
+      <h3>Browse wardrobe styles</h3>
+      <p class="catalog-intro">Every style is made to measure in our Leicester workshop   pick a starting point, then we tailor layout, finishes and internals to your room.</p>
+    </div>
+    <div class="catalog-layout" data-catalog="wardrobes">
+      <aside class="catalog-sidebar" aria-label="Filter wardrobe styles">
+        <h4>Categories</h4>
+        <ul class="catalog-cats">
+          <li><button type="button" class="catalog-cat active" data-filter="all">All styles</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="sliding">Sliding door</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="shaker">Shaker</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="walkin">Walk-in</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="mirrored">Mirrored</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="alcove">Alcove &amp; loft</button></li>
+        </ul>
+        <div class="catalog-sidebar-note"><span class="placeholder-note">Prices on enquiry   every job is bespoke</span></div>
+      </aside>
+      <div class="catalog-main">
+        <div class="catalog-toolbar">
+          <span class="catalog-count" data-count-for="wardrobeGrid">Showing <strong>12</strong> styles</span>
+          <div class="catalog-toolbar-right">
+            <label class="catalog-sort"><span>Sort</span>
+              <select class="catalog-sort-select" aria-label="Sort wardrobe styles">
+                <option>Featured</option><option>Name A Z</option><option>Most popular</option>
+              </select>
+            </label>
+            <div class="catalog-cols" role="group" aria-label="Grid columns">
+              <button type="button" class="col-btn" data-cols="2" aria-label="2 columns">2</button>
+              <button type="button" class="col-btn active" data-cols="3" aria-label="3 columns">3</button>
+              <button type="button" class="col-btn" data-cols="4" aria-label="4 columns">4</button>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-grid cols-3" id="wardrobeGrid">
+          <article class="product-card" data-category="sliding" data-name="Horizon sliding">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80');"><span class="product-badge">Popular</span></a>
+            <div class="product-body"><span class="product-cat">Sliding door</span><h4>Horizon sliding</h4><p>Full-height sliding panels with soft-close track   ideal for tight bedroom layouts.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="mirrored" data-name="Reflection mirrored">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Mirrored</span><h4>Reflection mirrored</h4><p>Floor-to-ceiling mirror doors that visually double the room.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="shaker" data-name="Classic shaker">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Shaker</span><h4>Classic shaker</h4><p>Painted or woodgrain shaker fronts with tailored internal layouts.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="walkin" data-name="Studio walk-in">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1631889992176-5fa8e4c846fe?w=600&q=80');"><span class="product-badge">LED standard</span></a>
+            <div class="product-body"><span class="product-cat">Walk-in</span><h4>Studio walk-in</h4><p>Open dressing room with LED shelving, drawers and hanging zones.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="shaker" data-name="Sage shaker suite">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Shaker</span><h4>Sage shaker suite</h4><p>Soft painted finish with mixed hanging, shelves and shoe storage.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="alcove" data-name="Alcove fitted">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1595428774223-ef52624120b2?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Alcove &amp; loft</span><h4>Alcove fitted</h4><p>Box-in awkward chimney breasts and eaves with usable storage.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="sliding" data-name="Dual-tone sliding">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Sliding door</span><h4>Dual-tone sliding</h4><p>Contrasting panel colours with integrated top storage.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="walkin" data-name="Corner walk-in">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Walk-in</span><h4>Corner walk-in</h4><p>L-shaped internal layout making use of dead corner space.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="mirrored" data-name="Bronze mirror">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1615529328331-f8917597711f?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Mirrored</span><h4>Bronze mirror</h4><p>Tinted mirror doors with brushed metal trim detail.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="shaker" data-name="Oak grain shaker">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1616137462111-b2e7f9578618?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Shaker</span><h4>Oak grain shaker</h4><p>Warm woodgrain fronts with soft-close hinges throughout.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="alcove" data-name="Loft eaves">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Alcove &amp; loft</span><h4>Loft eaves</h4><p>Angled cabinetry following roof lines in loft conversions.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="sliding" data-name="Minimal flush">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Sliding door</span><h4>Minimal flush</h4><p>Handleless sliding doors with push-to-open internals.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <div class="dim-rule"><span>03 — kitchens</span></div>
@@ -125,9 +217,157 @@
     </div>
     <div class="split-photo bracketed" style="background-image:url('https://images.unsplash.com/photo-1600489000022-208129279abb?w=800&q=80');"><span class="bl"></span><span class="br"></span><span class="ph-label">[ placeholder photo ]</span></div>
   </div>
+
+  <div class="catalog-block" id="kitchen-styles">
+    <div class="catalog-header">
+      <nav class="catalog-breadcrumb" aria-label="Breadcrumb"><span>Kitchens</span> / <strong>Styles</strong></nav>
+      <h3>Browse kitchen styles</h3>
+      <p class="catalog-intro">German, Italian and British supplier ranges   fitted by our team with integrated appliances and optional custom glass splashbacks.</p>
+    </div>
+    <div class="catalog-layout" data-catalog="kitchens">
+      <aside class="catalog-sidebar" aria-label="Filter kitchen styles">
+        <h4>Categories</h4>
+        <ul class="catalog-cats">
+          <li><button type="button" class="catalog-cat active" data-filter="all">All styles</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="handleless">Handleless</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="shaker">Shaker</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="island">Island</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="splashback">Glass splashback</button></li>
+        </ul>
+        <div class="catalog-sidebar-note"><span class="placeholder-note">Supplier brands   confirm list before launch</span></div>
+      </aside>
+      <div class="catalog-main">
+        <div class="catalog-toolbar">
+          <span class="catalog-count" data-count-for="kitchenGrid">Showing <strong>9</strong> styles</span>
+          <div class="catalog-toolbar-right">
+            <label class="catalog-sort"><span>Sort</span>
+              <select class="catalog-sort-select" aria-label="Sort kitchen styles">
+                <option>Featured</option><option>Name A Z</option><option>Most popular</option>
+              </select>
+            </label>
+            <div class="catalog-cols" role="group" aria-label="Grid columns">
+              <button type="button" class="col-btn" data-cols="2" aria-label="2 columns">2</button>
+              <button type="button" class="col-btn active" data-cols="3" aria-label="3 columns">3</button>
+              <button type="button" class="col-btn" data-cols="4" aria-label="4 columns">4</button>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-grid cols-3" id="kitchenGrid">
+          <article class="product-card" data-category="handleless" data-name="Slate handleless">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&q=80');"><span class="product-badge">Popular</span></a>
+            <div class="product-body"><span class="product-cat">Handleless</span><h4>Slate handleless</h4><p>Matte grey gloss with integrated J-pull and full appliance bank.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="shaker" data-name="Heritage shaker">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600489000022-208129279abb?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Shaker</span><h4>Heritage shaker</h4><p>Classic framed doors with quartz worktop and Belfast sink option.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="splashback" data-name="Azure glass">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80');"><span class="product-badge">Custom glass</span></a>
+            <div class="product-body"><span class="product-cat">Glass splashback</span><h4>Azure glass</h4><p>Custom coloured glass splashback matched to door colour.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="island" data-name="Central island">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Island</span><h4>Central island</h4><p>Seating overhang, prep sink and concealed bin storage.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="handleless" data-name="White gloss line">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Handleless</span><h4>White gloss line</h4><p>High-gloss white with LED pelmet lighting.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="shaker" data-name="Sage in-frame">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Shaker</span><h4>Sage in-frame</h4><p>Painted in-frame shaker with brass hardware accents.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="splashback" data-name="Violet glass">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Glass splashback</span><h4>Violet glass</h4><p>Statement colour splashback behind hob and sink runs.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="island" data-name="Compact galley">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1556909177-f6e7ad7d3136?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Island</span><h4>Compact galley</h4><p>Space-efficient layout for terraced homes and flats.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+          <article class="product-card" data-category="handleless" data-name="Graphite matte">
+            <a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80');"></a>
+            <div class="product-body"><span class="product-cat">Handleless</span><h4>Graphite matte</h4><p>Soft-touch matte fronts with oak open shelving detail.</p><a class="product-enquire" href="#contact">Enquire</a></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<div class="dim-rule"><span>04 — workshop</span></div>
+
+<div class="dim-rule"><span>04 — finishes &amp; storage</span></div>
+
+<section id="finishes" class="compact">
+  <div class="eyebrow">Materials</div>
+  <h2>Finishes &amp; bespoke storage</h2>
+  <p style="max-width:640px;margin-bottom:24px;">Choose door styles, colours and worktop materials   or explore custom storage beyond bedrooms and kitchens.</p>
+
+  <div class="catalog-layout finishes-layout" data-catalog="finishes">
+    <aside class="catalog-sidebar" aria-label="Filter finishes">
+      <h4>Finish type</h4>
+      <ul class="catalog-cats">
+        <li><button type="button" class="catalog-cat active" data-filter="all">All</button></li>
+        <li><button type="button" class="catalog-cat" data-filter="paint">Painted</button></li>
+        <li><button type="button" class="catalog-cat" data-filter="wood">Wood &amp; grain</button></li>
+        <li><button type="button" class="catalog-cat" data-filter="glass">Glass</button></li>
+        <li><button type="button" class="catalog-cat" data-filter="worktop">Worktops</button></li>
+      </ul>
+    </aside>
+    <div class="catalog-main">
+      <div class="catalog-toolbar">
+        <span class="catalog-count" data-count-for="finishGrid">Showing <strong>12</strong> options</span>
+      </div>
+      <div class="swatch-grid" id="finishGrid">
+        <article class="swatch-card" data-category="paint" data-name="Sage green"><div class="swatch" style="background:#9CAF88;"></div><h4>Sage green</h4><p>Painted shaker</p></article>
+        <article class="swatch-card" data-category="paint" data-name="Soft white"><div class="swatch" style="background:#F4F1EA;border:1px solid var(--line);"></div><h4>Soft white</h4><p>Painted matt</p></article>
+        <article class="swatch-card" data-category="paint" data-name="Charcoal"><div class="swatch" style="background:#3D3D3D;"></div><h4>Charcoal</h4><p>Handleless gloss</p></article>
+        <article class="swatch-card" data-category="wood" data-name="Natural oak"><div class="swatch" style="background:linear-gradient(135deg,#C4A574,#8B6914);"></div><h4>Natural oak</h4><p>Woodgrain veneer</p></article>
+        <article class="swatch-card" data-category="wood" data-name="Grey oak"><div class="swatch" style="background:linear-gradient(135deg,#A89F91,#6B6560);"></div><h4>Grey oak</h4><p>Woodgrain veneer</p></article>
+        <article class="swatch-card" data-category="wood" data-name="Walnut"><div class="swatch" style="background:linear-gradient(135deg,#5C4033,#3E2723);"></div><h4>Walnut</h4><p>Interior shelving</p></article>
+        <article class="swatch-card" data-category="glass" data-name="Azure glass"><div class="swatch" style="background:linear-gradient(135deg,#4A90D9,#2E5A8B);"></div><h4>Azure glass</h4><p>Splashback colour</p></article>
+        <article class="swatch-card" data-category="glass" data-name="Violet glass"><div class="swatch" style="background:linear-gradient(135deg,#7B5BA8,#4A3566);"></div><h4>Violet glass</h4><p>Splashback colour</p></article>
+        <article class="swatch-card" data-category="glass" data-name="Bronze mirror"><div class="swatch" style="background:linear-gradient(135deg,#8B7355,#5C4A3A);"></div><h4>Bronze mirror</h4><p>Wardrobe doors</p></article>
+        <article class="swatch-card" data-category="worktop" data-name="Quartz white"><div class="swatch" style="background:linear-gradient(135deg,#E8E8E8,#D0D0D0);"></div><h4>Quartz white</h4><p>Kitchen worktop</p></article>
+        <article class="swatch-card" data-category="worktop" data-name="Concrete grey"><div class="swatch" style="background:linear-gradient(135deg,#9E9E9E,#616161);"></div><h4>Concrete grey</h4><p>Kitchen worktop</p></article>
+        <article class="swatch-card" data-category="worktop" data-name="Butcher block"><div class="swatch" style="background:linear-gradient(135deg,#DEB887,#8B6914);"></div><h4>Butcher block</h4><p>Oak island top</p></article>
+      </div>
+    </div>
+  </div>
+
+  <div class="storage-block" id="storage">
+    <div class="catalog-header" style="margin-top:48px;">
+      <nav class="catalog-breadcrumb" aria-label="Breadcrumb"><span>Bespoke</span> / <strong>Storage solutions</strong></nav>
+      <h3>Custom storage beyond wardrobes</h3>
+    </div>
+    <div class="catalog-layout" data-catalog="storage">
+      <aside class="catalog-sidebar" aria-label="Filter storage types">
+        <h4>Room</h4>
+        <ul class="catalog-cats">
+          <li><button type="button" class="catalog-cat active" data-filter="all">All</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="living">Living</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="hall">Hall &amp; stairs</button></li>
+          <li><button type="button" class="catalog-cat" data-filter="office">Home office</button></li>
+        </ul>
+      </aside>
+      <div class="catalog-main">
+        <div class="catalog-toolbar">
+          <span class="catalog-count" data-count-for="storageGrid">Showing <strong>6</strong> solutions</span>
+        </div>
+        <div class="catalog-grid cols-3" id="storageGrid">
+          <article class="product-card" data-category="living" data-name="Media wall"><a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80');"></a><div class="product-body"><span class="product-cat">Living</span><h4>Media wall</h4><p>TV unit with concealed cabling, shelving and optional fireplace surround.</p><a class="product-enquire" href="#contact">Enquire</a></div></article>
+          <article class="product-card" data-category="hall" data-name="Under-stairs"><a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80');"></a><div class="product-body"><span class="product-cat">Hall &amp; stairs</span><h4>Under-stairs</h4><p>Pull-out drawers and hanging for coats, shoes and utilities.</p><a class="product-enquire" href="#contact">Enquire</a></div></article>
+          <article class="product-card" data-category="office" data-name="Home office"><a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1595428774223-ef52624120b2?w=600&q=80');"></a><div class="product-body"><span class="product-cat">Home office</span><h4>Built-in desk</h4><p>Floating desk with overhead cupboards and cable management.</p><a class="product-enquire" href="#contact">Enquire</a></div></article>
+          <article class="product-card" data-category="living" data-name="Alcove shelving"><a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80');"></a><div class="product-body"><span class="product-cat">Living</span><h4>Alcove shelving</h4><p>Floor-to-ceiling units flanking chimney breasts.</p><a class="product-enquire" href="#contact">Enquire</a></div></article>
+          <article class="product-card" data-category="hall" data-name="Boot room"><a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&q=80');"></a><div class="product-body"><span class="product-cat">Hall &amp; stairs</span><h4>Boot room</h4><p>Bench seating, hooks and cubbies for muddy boots and bags.</p><a class="product-enquire" href="#contact">Enquire</a></div></article>
+          <article class="product-card" data-category="office" data-name="Library wall"><a class="product-thumb" href="#contact" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80');"></a><div class="product-body"><span class="product-cat">Home office</span><h4>Library wall</h4><p>Open shelving with ladder rail for tall book collections.</p><a class="product-enquire" href="#contact">Enquire</a></div></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dim-rule"><span>05 — workshop</span></div>
 
 <section>
   <div class="eyebrow">Made in-house</div>
@@ -140,7 +380,7 @@
   </div>
 </section>
 
-<div class="dim-rule"><span>05 — process</span></div>
+<div class="dim-rule"><span>06 — process</span></div>
 
 <section>
   <div class="eyebrow">How it works</div>
@@ -166,7 +406,7 @@
   </div>
 </div>
 
-<div class="dim-rule"><span>06 — gallery</span></div>
+<div class="dim-rule"><span>07 — gallery</span></div>
 
 <section id="gallery">
   <div class="eyebrow">Recent work</div>
@@ -177,10 +417,21 @@
     <button class="filter-tab active" data-filter="all" aria-pressed="true">All</button>
     <button class="filter-tab" data-filter="wardrobes" aria-pressed="false">Wardrobes</button>
     <button class="filter-tab" data-filter="kitchens" aria-pressed="false">Kitchens</button>
+    <button class="filter-tab" data-filter="storage" aria-pressed="false">Storage</button>
+  </div>
+<div class="catalog-toolbar gallery-toolbar">
+    <span class="catalog-count" id="galleryCount">Showing <strong>9</strong> projects</span>
+    <div class="catalog-toolbar-right">
+      <label class="catalog-sort"><span>Sort</span>
+        <select class="catalog-sort-select" id="gallerySort" aria-label="Sort gallery">
+          <option value="featured">Featured</option><option value="az">Name A Z</option>
+        </select>
+      </label>
+    </div>
   </div>
 
   <div class="gallery-grid" id="galleryGrid">
-    <figure data-category="wardrobes">
+    <figure data-category="wardrobes" data-name="Sage shaker wardrobes — Leicester">
       <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80');"></div>
       <div class="info">
         <figcaption>Sage shaker wardrobes — Leicester</figcaption>
@@ -191,7 +442,7 @@
         </a>
       </div>
     </figure>
-    <figure data-category="wardrobes">
+    <figure data-category="wardrobes" data-name="Walk-in system, LED shelving">
       <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80');"></div>
       <div class="info">
         <figcaption>Walk-in system, LED shelving</figcaption>
@@ -202,7 +453,7 @@
         </a>
       </div>
     </figure>
-    <figure data-category="kitchens">
+    <figure data-category="kitchens" data-name="Handleless grey gloss kitchen">
       <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&q=80');"></div>
       <div class="info">
         <figcaption>Handleless grey gloss kitchen</figcaption>
@@ -213,7 +464,7 @@
         </a>
       </div>
     </figure>
-    <figure data-category="wardrobes">
+    <figure data-category="wardrobes" data-name="Sliding mirror door wardrobe">
       <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80');"></div>
       <div class="info">
         <figcaption>Sliding mirror door wardrobe</figcaption>
@@ -224,7 +475,7 @@
         </a>
       </div>
     </figure>
-    <figure data-category="kitchens">
+    <figure data-category="kitchens" data-name="Custom blue glass splashback">
       <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1600489000022-208129279abb?w=600&q=80');" style="background:linear-gradient(160deg,#3A4A6E,#242E44);"></div>
       <div class="info">
         <figcaption>Custom blue glass splashback</figcaption>
@@ -235,7 +486,7 @@
         </a>
       </div>
     </figure>
-    <figure data-category="kitchens">
+    <figure data-category="kitchens" data-name="Custom purple glass splashback">
       <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80');" style="background:linear-gradient(160deg,#5A3A6E,#332044);"></div>
       <div class="info">
         <figcaption>Custom purple glass splashback</figcaption>
@@ -246,10 +497,43 @@
         </a>
       </div>
     </figure>
-  </div>
+    <figure data-category="storage" data-name="Media wall Leicester">
+      <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80');"></div>
+      <div class="info">
+        <figcaption>Media wall   Leicester</figcaption>
+        <span class="cat-tag">Storage</span>
+        <a class="wa-btn" href="https://api.whatsapp.com/send?phone=447312094979&text=Hi%2C%20I%27m%20interested%20in%20the%20media%20wall%20project%20shown%20on%20your%20site." target="_blank" rel="noopener">
+          <span class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg></span>
+          <span class="label"><span class="small">Ask on</span><span class="big">WhatsApp</span></span>
+        </a>
+      </div>
+    </figure>
+    <figure data-category="storage" data-name="Under-stairs storage">
+      <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80');"></div>
+      <div class="info">
+        <figcaption>Under-stairs pull-out storage</figcaption>
+        <span class="cat-tag">Storage</span>
+        <a class="wa-btn" href="https://api.whatsapp.com/send?phone=447312094979&text=Hi%2C%20I%27m%20interested%20in%20under-stairs%20storage%20like%20shown%20on%20your%20site." target="_blank" rel="noopener">
+          <span class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg></span>
+          <span class="label"><span class="small">Ask on</span><span class="big">WhatsApp</span></span>
+        </a>
+      </div>
+    </figure>
+    <figure data-category="wardrobes" data-name="Oak grain fitted">
+      <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1616137462111-b2e7f9578618?w=600&q=80');"></div>
+      <div class="info">
+        <figcaption>Oak grain fitted wardrobes</figcaption>
+        <span class="cat-tag">Wardrobes</span>
+        <a class="wa-btn" href="https://api.whatsapp.com/send?phone=447312094979&text=Hi%2C%20I%27m%20interested%20in%20oak%20grain%20fitted%20wardrobes%20shown%20on%20your%20site." target="_blank" rel="noopener">
+          <span class="icon-circle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z"/></svg></span>
+          <span class="label"><span class="small">Ask on</span><span class="big">WhatsApp</span></span>
+        </a>
+      </div>
+    </figure>
+</div>
 </section>
 
-<div class="dim-rule"><span>07 — about</span></div>
+<div class="dim-rule"><span>08 — about</span></div>
 
 <section>
   <div class="eyebrow">Who we are</div>
@@ -261,7 +545,7 @@
   </div>
 </section>
 
-<div class="dim-rule"><span>08 — faq</span></div>
+<div class="dim-rule"><span>09 — faq</span></div>
 
 <section class="compact">
   <div class="eyebrow">Questions</div>
@@ -275,7 +559,7 @@
   </div>
 </section>
 
-<div class="dim-rule"><span>09 — reviews</span></div>
+<div class="dim-rule"><span>10 — reviews</span></div>
 
 <section class="compact">
   <div class="eyebrow">Reviews</div>
@@ -289,7 +573,7 @@
   </div>
 </section>
 
-<div class="dim-rule"><span>10 — contact</span></div>
+<div class="dim-rule"><span>11 — contact</span></div>
 
 <section id="contact">
   <div class="contact-wrap">
@@ -323,6 +607,7 @@
           <option value="">Project type</option>
           <option>Wardrobe</option>
           <option>Kitchen</option>
+          <option>Bespoke storage</option>
           <option>Other</option>
         </select>
 
@@ -349,6 +634,7 @@
   <div class="links">
     <a href="#wardrobes">Wardrobes</a>
     <a href="#kitchens">Kitchens</a>
+    <a href="#finishes">Finishes</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </div>
