@@ -1,4 +1,4 @@
-// --- Gallery filter tabs ---
+﻿// --- Gallery filter tabs ---
   (function () {
     var tabs = document.querySelectorAll('.filter-tab');
     var grid = document.getElementById('galleryGrid');

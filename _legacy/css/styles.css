@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --cream: #F6F4EF;
     --panel: #FFFFFF;
     --ink: #2A2823;
@@ -336,7 +336,7 @@
 .compare-col.us h3 { color: var(--brand-accent); }
 .compare-col ul { list-style: none; font-size: 14px; color: var(--stone); }
 .compare-col li { padding: 10px 0; border-bottom: 1px solid var(--line); display: flex; gap: 10px; align-items: flex-start; }
-.compare-col.them li::before { content: "—"; flex-shrink: 0; font-family: var(--font-mono); color: var(--stone); }
+.compare-col.them li::before { content: "ΓÇö"; flex-shrink: 0; font-family: var(--font-mono); color: var(--stone); }
 .compare-col.us li::before { content: "+"; flex-shrink: 0; font-family: var(--font-mono); color: var(--brand); }
 .faq-accordion { max-width: 680px; }
 .faq-accordion details { border-bottom: 1px solid var(--line); }
