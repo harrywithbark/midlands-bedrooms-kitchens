@@ -217,3 +217,113 @@
       window.open(url, '_blank', 'noopener');
     });
   })();
+
+// --- Premium walkthrough: scroll journey ---
+  function initWalkthroughJourney(rootId) {
+    var root = document.getElementById(rootId);
+    if (!root) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var sentinels = root.querySelectorAll('.wwt-sentinel');
+    var steps = root.querySelectorAll('.wwt-step');
+    var imgs = root.querySelectorAll('.wwt-img');
+    var dots = root.querySelectorAll('.wwt-dot');
+    if (!sentinels.length) return;
+
+    function setStep(stepNum) {
+      var id = String(stepNum);
+      steps.forEach(function (el) {
+        el.classList.toggle('is-active', el.getAttribute('data-step') === id);
+      });
+      imgs.forEach(function (el) {
+        el.classList.toggle('is-active', el.getAttribute('data-step') === id);
+      });
+      dots.forEach(function (el) {
+        var active = el.getAttribute('data-step') === id;
+        el.classList.toggle('is-active', active);
+        if (active) el.setAttribute('aria-current', 'step');
+        else el.removeAttribute('aria-current');
+      });
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setStep(entry.target.getAttribute('data-step'));
+          }
+        });
+      },
+      { root: null, rootMargin: '-42% 0px -42% 0px', threshold: 0 }
+    );
+
+    sentinels.forEach(function (s) { observer.observe(s); });
+
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        var step = dot.getAttribute('data-step');
+        var sentinel = root.querySelector('.wwt-sentinel[data-step="' + step + '"]');
+        if (!sentinel) return;
+        var nav = document.querySelector('nav.stuck');
+        var offset = nav ? nav.offsetHeight + 16 : 16;
+        var top = sentinel.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      });
+    });
+
+    setStep('1');
+  }
+
+// --- Premium walkthrough: hotspot tour ---
+  function initWalkthroughTour(tourId, panelPrefix) {
+    var tour = document.getElementById(tourId);
+    if (!tour) return;
+
+    var hotspots = tour.querySelectorAll('.wwt-hotspot');
+    var backdrop = tour.querySelector('.wwt-tour-backdrop');
+
+    function closeAll() {
+      tour.classList.remove('panel-open');
+      hotspots.forEach(function (h) {
+        h.classList.remove('is-open');
+        h.setAttribute('aria-expanded', 'false');
+      });
+      tour.querySelectorAll('.wwt-panel.is-open').forEach(function (p) {
+        p.classList.remove('is-open');
+      });
+    }
+
+    function openHotspot(id) {
+      closeAll();
+      var hotspot = tour.querySelector('.wwt-hotspot[data-hotspot="' + id + '"]');
+      var panel = document.getElementById(panelPrefix + id);
+      if (!hotspot || !panel) return;
+      hotspot.classList.add('is-open');
+      hotspot.setAttribute('aria-expanded', 'true');
+      panel.classList.add('is-open');
+      tour.classList.add('panel-open');
+    }
+
+    hotspots.forEach(function (hotspot) {
+      hotspot.addEventListener('click', function () {
+        var id = hotspot.getAttribute('data-hotspot');
+        if (hotspot.classList.contains('is-open')) closeAll();
+        else openHotspot(id);
+      });
+    });
+
+    tour.querySelectorAll('.wwt-panel-close').forEach(function (btn) {
+      btn.addEventListener('click', closeAll);
+    });
+
+    if (backdrop) backdrop.addEventListener('click', closeAll);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && tour.classList.contains('panel-open')) closeAll();
+    });
+  }
+
+  initWalkthroughJourney('wardrobe-journey');
+  initWalkthroughTour('wardrobe-tour', 'wwt-panel-');
+  initWalkthroughJourney('kitchen-journey');
+  initWalkthroughTour('kitchen-tour', 'kwt-panel-');
